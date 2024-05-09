@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="863.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ewaste.RegisterController">
+    <TextField fx:id="username" layoutX="551.0" layoutY="182.0" prefHeight="46.0" prefWidth="280.0" promptText="Username">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </TextField>
+    <Button fx:id="register_button" layoutX="551.0" layoutY="435.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Register" textFill="WHITE" onAction="#registerButtonClicked">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </Button>
+    <Label layoutX="621.0" layoutY="109.0" prefHeight="36.0" prefWidth="126.0" text=" Sign In" textFill="#302e2e">
+        <font>
+            <Font name="System Bold" size="25.0" />
+        </font>
+    </Label>
+    <PasswordField fx:id="password" layoutX="551.0" layoutY="264.0" prefHeight="46.0" prefWidth="280.0" promptText="Password">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </PasswordField>
+    <PasswordField fx:id="retype_password" layoutX="551.0" layoutY="347.0" prefHeight="46.0" prefWidth="280.0" promptText="Re-type-Password">
+        <font>
+            <Font size="21.0" />
+        </font>
+    </PasswordField>
+    <BorderPane layoutX="65.0" layoutY="154.0" prefHeight="342.0" prefWidth="336.0" />
+   <AnchorPane prefHeight="611.0" prefWidth="466.0" style="-fx-background-color: lightblack;">
+      <children>
+         <ImageView fitHeight="611.0" fitWidth="476.0" layoutY="-1.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@image.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="393.0" fitWidth="354.0" layoutX="56.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@download.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <Text layoutX="540.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already an user?.." />
+   <Button fx:id="login_button" layoutX="676.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Log in" textFill="#282828" onAction="#loginButtonClicked"/>
+</AnchorPane>
