@@ -1,6 +1,6 @@
-E-Waste Management System
+###E-Waste Management System
 
-Table of Contents
+##Table of Contents
 Overview
 Features
 Technologies Used
